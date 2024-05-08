@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+.home, .our-package{
+    min-height: 100vh;
+    padding: 5rem 9% 2rem;
+}
+
+.call-us {
+    min-height: 50vh;
+    padding: 0 9%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: var(--textcolor);
+    font-weight: 700;
+    cursor: default;
+}
+
+.navbar a{
+    font-size: 1.2rem;
+    color: var(--textcolor);
+    margin-left: 2rem;
+    transition: .3s;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: var(--maincolor);
+}
+
+.judul {
+    display : block;
+    font-size: 2.5rem;
+    color: var(--textcolor);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.judul p {
+    font-size: 1.2rem;
+    color: var(--textcolor);
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img-content {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    padding: 0 30px 20px 20px;
+    box-sizing: border-box;
+}
+
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+}
+
+.slide img {
+    width: 100%;
+    height: max-content;
+    display: block;
+    border-radius: 5px;
+}
+
+
+
+.caption {
+    padding-bottom: 20px;
+}
+
+.form-content {
+    height: 100%;
+    width: 45%;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: rgb(237, 236, 236);
+}
+
+.post-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.post-profile img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.form-content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.form-content p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form label{
+    font-weight: 600;
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.form-content form input, .form-content form select {
+    background-color: #ffffff;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid #d1d1d1;
+}
+
+.form-content form input::placeholder,
+.form-content form select::placeholder {
+    padding: 5px;
+}
+
+.form-content form input:focus,
+.form-content form select:focus {
+    border: 2px solid #442fff;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-content form select {
+    margin-bottom: 1.2rem;
+
+}
+
+.form-content form button {
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: white;
+    background-color: #2c2c2c;
+    border-radius: 5px;
+}
+
+.form-content form button:hover {
+    background-color: #442fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.benefits-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2rem 1rem;
+}
+
+.benefits-content h3 {
+    margin-bottom: 2rem;
+}
+
+.benefits-content ul li {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.benefits-content ul li .number-background {
+    position: absolute;
+    left: -2.5em;
+    width: 2rem;
+    height: 2rem;
+    color: #414141;
+    background-color: #c5c5c5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.our-package h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.package-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.package {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: 1 0 30%;
+    flex: 1 0 30%;
+    margin: 1em 0;
+}
+
+.text h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.package i {
+    font-size: 2rem;
+    background-color: #d1d1d1;
+    border-radius: 50%;
+    padding: 0.4rem;
+    margin: 0 1rem 0 1rem;
+}
+
+.call-us-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.call-us h1 {
+    font-size: 3em; 
+}
+
+.call-us button {
+    padding: 1em 2em; 
+    font-size: 1.2em; 
+    font-weight: 700;
+    color: #292929;
+}
+
+.call-us button:hover {
+    background-color: #442fff;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa; /* Atur sesuai kebutuhan */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.footer-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333; /* Atur sesuai kebutuhan */
+}
+
+.footer-year {
+    margin-top: 20px;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .judul h1 {
+        font-size: 3rem;
+    }
+
+    .content p {
+        font-size: 0.8rem;
+    }
+
+    .navbar a {
+        font-size: 0.7rem;
+        font-weight: 700;
+    }
+
+    .img-content {
+        width: 100%;
+        padding: 0 0 20px 0;
+    }
+
+    .package {
+        flex: 1 0 100%;
+    }
+
+    .form-content {
+        width: 100%;
+    }
+    
+    .call-us-content {
+        padding: 0 20px;
+    }
+}
